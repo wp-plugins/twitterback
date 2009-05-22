@@ -109,7 +109,8 @@ function twitterBackOpt() {
 		
 		$citados = twitterBack::usuariosCitados($texto);
 		if ($citados !="") {
-			$url = twitterBack::TinyURL($endereco);
+			//$url = twitterBack::TinyURL($endereco);
+			$url = twitterBack::migrarUrl($endereco);
 		}
 
 		foreach($citados as $citado) {
