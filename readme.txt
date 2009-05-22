@@ -14,7 +14,7 @@ Antigamente ao citar alguém em um post costumavamos colocar um link para o blog
 
 Hoje em dia as pessoas estão linkando o twitter quando citam alguém em seus posts, dessa forma perdemos o trackback. Para suprir essa necessidade nasceu o TwitterBack que envia um reply no twitter, para o usuário citado no post, informando a citação.
 
-O twitterBack faz com links para o twitter o que o trackback faz com links para posts, informa ao usuário que ele foi citado em um post.
+O twitterBack faz com links para o twitter o que o trackback faz com links para blogs, informa ao usuário que ele foi citado em um post.
 
 == INSTALLATION ==
 
