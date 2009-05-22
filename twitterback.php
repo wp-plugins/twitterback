@@ -39,7 +39,7 @@ class twitterBack{
 		return $citados;
 	}
 	function migrarUrl($url) {
-		$endereco = "http://migre.me/api.xml?url=".$url;
+		$endereco = "http://migre.me/api.xml?url=".urlencode($url);
 		$xml = simplexml_load_file($endereco);
 		return $xml->migre;
 	}
