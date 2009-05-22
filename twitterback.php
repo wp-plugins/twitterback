@@ -3,7 +3,7 @@
 Plugin Name: TwitterBack
 Plugin URI: http://leobaiano.com/download
 Description: Envia um reply para os usuários do twitter citados no post informando que ele foi citado no texto.
-Version: 1.0
+Version: 1.1
 Author: Leo Baiano
 Author URI: http://leobaiano.com/
 */
@@ -42,6 +42,9 @@ class twitterBack{
 		$endereco = "http://migre.me/api.xml?url=".urlencode($url);
 		$xml = simplexml_load_file($endereco);
 		return $xml->migre;
+	}
+	function TinyURL($u){
+		return file_get_contents('http://tinyurl.com/api-create.php?url='.$u);
 	}
 }
 function twitterBackOpt() {
@@ -105,7 +108,9 @@ function twitterBackOpt() {
 		$endereco = get_permalink($id_post);
 		
 		$citados = twitterBack::usuariosCitados($texto);
-		$url = twitterBack::migrarUrl($endereco);
+		if ($citados !="") {
+			$url = twitterBack::TinyURL($endereco);
+		}
 
 		foreach($citados as $citado) {
 			twitterBack::enviarMensagem(get_option('twitterBack_user'),get_option('twitterBack_senha'),get_option('twitterBack_mensagem'),$citado,$url);

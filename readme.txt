@@ -37,7 +37,7 @@ Você provavelmente não configurou o plugin com seus dados, vá até o menu Con
 
 Este plugin doi desenvolvido por Leo Baiano - http://www.leobaiano.com
 
-O plugin utiliza a API do http://www.migre.me para criar atalhos curtos para a URL dos pots que serão enviadas e a API do http://www.twitter.com para autenticar o usuário e enviar o reply.
+O plugin utiliza a API do <del>http://www.migre.me</del> www.Tinyurl.com para criar atalhos curtos para a URL dos pots que serão enviadas e a API do http://www.twitter.com para autenticar o usuário e enviar o reply.
 
 == CONTACT ==
 
