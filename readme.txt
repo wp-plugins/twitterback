@@ -12,7 +12,7 @@ O plugin TwitterBack serve para enviar uma mensagem para os usuários do twitter
 
 Antigamente ao citar alguém em um post costumavamos colocar um link para o blog e assim o worpress enviava um trackback informando a citação com link para o post, dessa forma era possível saber quem estava nos citando pela internet.
 
-Hoje em dia as pessoas estão linkando o twitter quando citam alguém em seus posts, dessa forma perdemos o trackback. Para suprir essa necessidade nasceu o TwitterBack que envia um reply no twitter, para o usuário citado no post, informando informando a citação.
+Hoje em dia as pessoas estão linkando o twitter quando citam alguém em seus posts, dessa forma perdemos o trackback. Para suprir essa necessidade nasceu o TwitterBack que envia um reply no twitter, para o usuário citado no post, informando a citação.
 
 O twitterBack faz com links para o twitter o que o trackback faz com links para posts, informa ao usuário que ele foi citado em um post.
 
