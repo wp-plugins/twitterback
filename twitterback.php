@@ -3,7 +3,7 @@
 Plugin Name: TwitterBack
 Plugin URI: http://leobaiano.com/download
 Description: Envia um reply para os usuários do twitter citados no post informando que ele foi citado no texto.
-Version: 1.1
+Version: 1.2
 Author: Leo Baiano
 Author URI: http://leobaiano.com/
 */
