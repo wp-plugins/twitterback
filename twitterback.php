@@ -13,6 +13,7 @@ class twitterBack{
 	
 	function enviarMensagem($usuario,$senha,$mensagem,$citado,$url) {
 		$mensagem = "@".$citado.", ".$mensagem.": ".$url;
+
 		$saida = "POST http://twitter.com/statuses/update.json HTTP/1.1\r\n";
 		$saida .= "Host: twitter.com\r\n";
 		$saida .= "Authorization: Basic ".base64_encode ("$usuario:$senha")."\r\n";
@@ -49,12 +50,12 @@ class twitterBack{
 }
 function twitterBackOpt() {
 		if (function_exists('add_options_page')) {
-			add_options_page('Options', 'TwitterBack', 5, basename(__FILE__), 'twitterBackMenu');
+			add_options_page('Options', 'TwitterBack', 5, 'twitterback.php', 'twitterBackMenu');
 	    }
 	}
 	function twitterBackMenu() {
-		$user = 'Seu Usuário';
-		$passw = 'Sua Senha';
+		$user = '';
+		$passw = '';
 		$msg = 'você foi citado em um texto meu, para conferir acesse o link';
 		add_option('twitterBack_user', $user);
 		twitterBack::$usuario = stripslashes(get_option('twitterBack_user'));
@@ -88,9 +89,9 @@ function twitterBackOpt() {
 		echo '<div>'."\n";
 		echo '<table>' ."\n";
 		echo '<tr><td>Usuário: </td>' ."\n";
-		echo '<td><input type="text" size="10" name="usuario" value="'.twitterBack::$usuario.'"></td></tr>' ."\n";
+		echo '<td><input type="text" size="40" name="usuario" value="'.twitterBack::$usuario.'" placeholder="Seu usuário twitter"></td></tr>' ."\n";
 		echo '<tr><td>Senha: </td>' ."\n";
-		echo '<td><input type="text" size="10" name="senha" value="'.twitterBack::$senha.'"></td></tr>' ."\n";
+		echo '<td><input type="password" size="40" name="senha" value="'.twitterBack::$senha.'" placeholder="Sua senha"></td></tr>' ."\n";
 		echo '<tr><td>Mensagem: </td>' ."\n";
 		echo '<td><input type="text" size="40" name="mensagem" value="'.twitterBack::$mensagem.'" maxlength="80"></td></tr>' ."\n";
 		echo '</table>' ."\n";

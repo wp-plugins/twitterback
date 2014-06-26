@@ -1,7 +1,7 @@
 ﻿=== TwitterBack ===
 Contributors: @leobaiano
 Donate link: http://leobaiano.com/donate
-Tags: twitter, microblogginng, reply, wordpress, twitterback
+Tags: twitter, microblogginng, reply, WordPress, twitterback
 Requires at least: 2.5
 Tested up to: 2.7.1
 Stable tag: twitterback
@@ -18,14 +18,14 @@ O twitterBack faz com links para o twitter o que o trackback faz com links para 
 
 == INSTALLATION ==
 
-É muito simples instalar o TwitterBack, basta subir os arquivos para a pasta plugins (wp-content/plugins) do seu wordpress, ativar no painel de administração do blog e depois acessar o menu Configurações/TwitterBack para configurar o plugin.
+É muito simples instalar o TwitterBack, basta subir os arquivos para a pasta plugins (wp-content/plugins) do seu WordPress, ativar no painel de administração do blog e depois acessar o menu Configurações/TwitterBack para configurar o plugin.
 Abaixo um passo a passo de instalação e configuração do plugin TwitterBack:
 
 1 - Acesse o FTP do seu blog e faça upload da pasta twitterback para a pasta wp-content/plugins do seu blog;
 
 2 - Acesse a página administrativa do seu blog e depois click no menu plugins, procure por twitterback na lista e depois click em ativar;
 
-3 - Se tudo correu bem deve aparecer um menu twitterback no menu configurações do wordpress, vá até twitterback e depois configure o plugin com seus dados.
+3 - Se tudo correu bem deve aparecer um menu twitterback no menu configurações do WordPress, vá até twitterback e depois configure o plugin com seus dados.
 
 == FREQUENTLY ASKED QUESTIONS ==
 
